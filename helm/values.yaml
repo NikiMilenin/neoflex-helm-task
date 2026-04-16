@@ -1,7 +1,7 @@
-replicaCount: 3
+replicaCount: 4
 
 image:
-  repository: nikitamilenin/neostudy   # ← твой Docker Hub образ
+  repository: nikitamilenin/neostudy  
   tag: "fixed_java_app"
   pullPolicy: IfNotPresent
 
