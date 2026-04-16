@@ -1,0 +1,15 @@
+replicaCount: 3
+
+image:
+  repository: nikitamilenin/neostudy   # ← твой Docker Hub образ
+  tag: "fixed_java_app"
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  targetPort: 8080
+  nodePort: 30080
+
+app:
+  name: fixed-java-app
